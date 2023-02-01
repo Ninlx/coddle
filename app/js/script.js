@@ -132,6 +132,105 @@
         return false;
       })
     })
+
+    /* ======= particles ======= */
+    let n = document.getElementById("particles")
+    if (n == null) {} else {
+      particlesJS("particles", {
+        "particles": {
+          "number": {
+            "value": 25,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": ["#4fff7b", "#000dff", "#ff5e5e"]
+          },
+          "shape": {
+            "type": ["circle", "edge", "star"],
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 0.55,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 0.55,
+              "opacity_min": 0.75,
+              "sync": true
+            }
+          },
+          "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 2,
+              "size_min": 3,
+              "sync": true
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 200,
+            "color": "#ffffff",
+            "opacity": 1,
+            "width": 0.55
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out-mode": "bounce",
+            "bounce": true,
+            "attract": {
+              "enable": true,
+              "rotateX": 700,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 200,
+              "line_linked": {
+                "opacity": 0.75
+              }
+            },
+            "bubble": {
+              "distance": 300,
+              "size": 2,
+              "duration": 0.25,
+              "opacity": 0.75,
+              "speed": 0.25
+            }
+          }
+        },
+        "retina_detect": true
+      })
+    }
+
+
   }) // ready function end
 
   /* ======= odometer ======= */
